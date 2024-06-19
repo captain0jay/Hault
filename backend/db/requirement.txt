@@ -1,0 +1,1 @@
+context db - for storing context of user no need for authentication since only 1 user is using it

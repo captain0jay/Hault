@@ -1,0 +1,15 @@
+{
+    "user": "1234",
+    "messages": [
+        {
+            "from": "admin",
+            "message": "Hi"
+        },
+        {
+            "from": "user",
+            "message": "Hi how are you doing?"
+        }
+    ]
+}
+
+its a array

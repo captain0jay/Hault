@@ -1,0 +1,1 @@
+convodb - only save the conversation stuff else other things not needed
