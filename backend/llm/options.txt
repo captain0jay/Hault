@@ -1,0 +1,11 @@
+there are 4 folders
+- geminiai (working)
+- workerai (working)
+- openai (not yet)
+- selfhost (not yet)
+
+env file LLM values
+WORKERAI 
+GEMINIAI
+OPENAI  
+SELFHOSTAI
