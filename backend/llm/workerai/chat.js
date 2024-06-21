@@ -1,9 +1,10 @@
+const { context } = require('../../textcleaner/contextCleaner');
 const axios = require('axios');
 require('dotenv').config();
 
-export default async function WorkerChat(prompt){
+async function WorkerChat(prompt){
     let new_response = '';
-    let context = await context();
+    let contextt = await context();
     try {
         const cloudflareAppId = process.env.CLOUDFLARE_APP_ID;
 
@@ -18,7 +19,7 @@ export default async function WorkerChat(prompt){
             "messages": [
                 {
                     "role": "system",
-                    "content": context
+                    "content": contextt
                 },
                 {
                     "role": "user",
@@ -41,3 +42,4 @@ export default async function WorkerChat(prompt){
     return new_response;
 }
 
+module.exports = { WorkerChat };

@@ -1,10 +1,11 @@
-import GeminiChat from "./geminiai/chat";
-import openaichat from "./openai/chat";
-import selfhostchat from "./selfhost/chat";
-import WorkerChat from "./workerai/chat";
+const { GeminiChat } = require("./geminiai/chat");
+const { openaichat } = require("./openai/chat");
+const { selfhostchat } = require("./selfhost/chat");
+const { WorkerChat } = require("./workerai/chat");
+
 require('dotenv').config();
 
-export default async function getChat(prompt){
+async function getChat(prompt){
     let response = '';
     if(process.env.LLM === 'WORKERAI'){
         response = await WorkerChat(prompt);
@@ -20,3 +21,5 @@ export default async function getChat(prompt){
     }
     return response;
 }
+
+module.exports = { getChat }

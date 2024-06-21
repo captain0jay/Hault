@@ -1,4 +1,6 @@
-export default async function openaichat(prompt){
+async function openaichat(prompt){
     let response = '';
     return response;
 }
+
+module.exports = { openaichat };

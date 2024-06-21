@@ -1,4 +1,6 @@
-export default async function selfhostchat(prompt){
+async function selfhostchat(prompt){
     let response = '';
     return response;
 }
+
+module.exports = { selfhostchat };
