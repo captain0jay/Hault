@@ -1,10 +1,8 @@
-const { context } = require('../../textcleaner/contextCleaner');
 const axios = require('axios');
 require('dotenv').config();
 
-async function WorkerChat(prompt){
+async function WorkerChat(prompt,context){
     let new_response = '';
-    let contextt = await context();
     try {
         const cloudflareAppId = process.env.CLOUDFLARE_APP_ID;
 
@@ -19,7 +17,7 @@ async function WorkerChat(prompt){
             "messages": [
                 {
                     "role": "system",
-                    "content": contextt
+                    "content": context
                 },
                 {
                     "role": "user",

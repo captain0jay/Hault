@@ -1,1 +1,2 @@
 convodb - only save the conversation stuff else other things not needed
+contextdb - sving context and expiring every minute
