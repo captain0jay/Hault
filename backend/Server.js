@@ -10,6 +10,11 @@ require('dotenv').config();
 const port = process.env.PORT || 3000;
 
 //routes
+app.use(
+    express.urlencoded({
+        extended: true,
+    })
+);
 app.use('/', indexRouter);
 app.use('/api/v1/twilio', twilioRouter);
 app.use('/api/v1/auth', authRouter);
