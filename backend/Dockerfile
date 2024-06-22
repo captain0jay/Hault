@@ -2,7 +2,7 @@
 FROM node:18.17.0
 
 # Set the working directory to the backend folder
-WORKDIR /backend
+WORKDIR /
 
 # Clean npm cache and install dependencies
 RUN npm cache clean --force && \
