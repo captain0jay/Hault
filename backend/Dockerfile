@@ -8,7 +8,9 @@ WORKDIR /backend
 COPY package*.json ./
 
 # Clean npm cache and install dependencies
-RUN npm install
+RUN npm cache clean --force && \
+    rm -rf node_modules && \
+    npm install
 
 # Copy the rest of the application code to the working directory
 COPY . .
@@ -17,4 +19,4 @@ COPY . .
 EXPOSE 4000
 
 # Start the application
-CMD ["npm", "start"]
+CMD ["node", "Server.js"]
