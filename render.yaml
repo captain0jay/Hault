@@ -9,7 +9,7 @@ services:
     envVars:
       - key: NODE_ENV
         value: development
-    port: 4000
+    # port: 4000
 
   # - type: web
   #   name: frontend
