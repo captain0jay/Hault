@@ -57,25 +57,24 @@ const getRecordFromAirtable = async (recordId) => {
     }
 };
 
-async function updateDescription(recordId,description){
-  base(process.env.AIRTABLE_TABLE_ID).update([
-    {
-      "id": recordId,
-      "fields": {
-        "Description": description
+async function updateDescription(recordId, description){
+  try {
+    await base(process.env.AIRTABLE_TABLE_ID).update([
+      {
+        "id": recordId,
+        "fields": {
+          "Description": description
+        }
       }
-    }
-  ], function(err, records) {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    records.forEach(function(record) {
-      console.log(record.get('Description'));
-    });
-  });
+    ]);
+    console.log(`Record ${recordId} updated with description: ${description}`);
+  } catch (err) {
+    console.error("Error updating description:", err);
+    throw err;
+  }
   return 0;
 }
+
 
 async function createRecord(params){
   base(process.env.AIRTABLE_TABLE_ID).create([
