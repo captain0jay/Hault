@@ -5,7 +5,7 @@ FROM node:18.17.0
 WORKDIR /backend
 
 # Copy package.json and package-lock.json files to the working directory
-COPY package.json ./
+COPY package*.json ./
 
 # Clean npm cache and install dependencies
 RUN npm cache clean --force && \
