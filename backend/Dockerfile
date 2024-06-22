@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 4000
 
 # Start the application
-CMD ["node", "Server.js"]
+CMD ["node", "backend/Server.js"]
