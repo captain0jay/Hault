@@ -131,9 +131,12 @@ But first for both developers and non-developers we need credentials of websites
 - Jwt secret key
 
 ### What are the env variables we need
-dont worry non-developers you just have to add a .env file in root directory thats it
+- dont worry non-developers you dont have to add the credentials that we will discuss later you have to add it in the render website itself after clicking `deploy on render`
+- for developers add a .env file in root directory thats it
 
-what will be in .env file?
+`non developers can head down to`<a href="#installation">Installation</a>`section and skip this part you will be instructed what to do there`
+
+so what are the credentials we need that will be in .env file?
 the credentials yu got fom websites will go here
 ```
 PORT=3000
@@ -193,10 +196,42 @@ Installation is divided into 2 parts that is one for non-developers who wanto qu
 ### Guide to Direct hosting on the internet
 for `(non-developers)`
 
- - First you have to fork the repo there is a fork option in the website as shown in the image below
- - After which you have to go to render website and sign in with github
- - Go to this page and choose repo where Hault is written
- - in env file add the credentials we just created
+ 1. Click the below button
+    
+   [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/captain0jay/Hault)
+
+ 2. Now get below written credentials by watching the video below
+    
+    * credentials to fetch
+    ```
+    PORT=3000
+    LLM=GEMINIAI
+    UI=AIRTABLE
+    OWNER_EMAIL=
+    OWNER_PHONE_NUMBER=
+    DATABASE_URL=
+    REDIS_DATABASE_URL=
+    TWILIO_PHONE_NUMBER=
+    TWILIO_ACCOUNT_SID=
+    TWILIO_AUTH_TOKEN=
+    GOOGLE_API_KEY=
+    CLOUDFLARE_APP_ID=
+    CLOUDFLARE_API_TOKEN=
+    GOOGLE_CLIENT_ID=
+    GOOGLE_CLIENT_SECRET=
+    GOOGLE_REDIRECT_URI=
+    JWT_SECRET_KEY=123
+    AIRTABLE_TABLE_ID=
+    AIRTABLE_BASE_ID=
+    AIRTABLE_API_KEY=
+    RULES='You are an AI support assistant for my company and are only allowed to answer questions related to context i have given you, normal grettings is fine speak like a support assistant on behalf of my company, your responses go directly to my customers so in no response should you be addressing me you are to talk with the users o my application only, ignore lowercase and uppercase ake all lowercase and when you dont have any answer say that we dont have the answer to that right now we will get back to you later' 
+    ```
+
+    * video to help fetch these credentials
+    
+ 3. Now put these in the website as shown below
+
+ 4. Optional
  - for installation use this command
 * make
   ```sh
