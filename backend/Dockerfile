@@ -2,15 +2,21 @@
 FROM node:18.17.0
 
 # Set the working directory to the backend folder
-WORKDIR ./
+WORKDIR /backend
+
+# Copy package.json and package-lock.json files to the working directory
+COPY package*.json ./backend
 
 # Clean npm cache and install dependencies
 RUN npm cache clean --force && \
     rm -rf node_modules && \
     npm install
 
+# Copy the rest of the application code to the working directory
+COPY . . /backend
+
 # Expose the port that your application runs on
 EXPOSE 4000
 
 # Start the application
-CMD ["npm", "start"]
+CMD ["node", "Server.js"]
