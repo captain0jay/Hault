@@ -320,8 +320,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Connect with me on linkedin - [@my_linkedin](https://linkedin.com/in/captain0jay)
+
 Captain Jay - [@my_twitter](https://twitter.com/captain0jay) 
+
 Email - capja778@gmail.com
+
 Portfolio website - [@my_website](https://captainjay.xyz/)
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/captain0jay/Hault)
