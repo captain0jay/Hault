@@ -2,6 +2,7 @@
 services:
   - type: web
     name: backend
+    env: docker
     dockerfilePath: ./backend/Dockerfile
     envVars:
       - key: NODE_ENV
@@ -10,6 +11,7 @@ services:
 
   # - type: web
   #   name: frontend
+  #   env: docker
   #   dockerfilePath: ./frontend/Dockerfile
   #   envVars:
   #     - key: NODE_ENV
