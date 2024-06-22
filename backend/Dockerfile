@@ -13,10 +13,10 @@ RUN npm cache clean --force && \
     npm install
 
 # Copy the rest of the application code to the working directory
-COPY . . 
+COPY . .
 
 # Expose the port that your application runs on
 EXPOSE 4000
 
 # Start the application
-CMD ["node", "backend/Server.js"]
+CMD ["npm", "start"]
