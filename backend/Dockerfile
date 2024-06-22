@@ -1,23 +1,21 @@
-# backend/Dockerfile
+# Use an official Node.js runtime as the base image
 FROM node:18.17.0
 
-WORKDIR /
+# Set the working directory to the backend folder
+WORKDIR /backend
 
-# Copy package.json and package-lock.json
+# Copy package.json and package-lock.json files to the working directory
 COPY package*.json ./
 
-# Remove node_modules if it exists, clear npm cache, and install dependencies
-RUN rm -rf node_modules && \
-    npm cache clean --force && \
+# Clean npm cache and install dependencies
+RUN npm cache clean --force && \
+    rm -rf node_modules && \
     npm install --legacy-peer-deps
 
-# Upgrade npm to the latest version if necessary
-RUN npm install -g npm@latest
-
-# Copy the rest of the application code
+# Copy the rest of the application code to the working directory
 COPY . .
 
-# Expose port 4000
+# Expose the port that your application runs on
 EXPOSE 4000
 
 # Start the application
