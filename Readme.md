@@ -13,14 +13,14 @@
   <p align="center">
     AI Customer support and buisness launch software
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Host it online</strong></a>
+    <a href="https://github.com/captain0jay/Hault"><strong>Host it online</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Video Tutorials</a>
+    <a href="https://github.com/captain0jay/Hault/Tutorials/VideoTutorials.md">Video Tutorials</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Install locally</a>
+    <a href="https://github.com/captain0jay/Hault/Tutorials/Installation.md">Install locally</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/captain0jay/Hault/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 
   <div align="center">
@@ -53,16 +53,21 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">What are the env variables we need?s</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#what-are-the-env-variables-we-need
+">What are the env variables we need</a></li>
+        <li><a href="#options">Options</a></li>
       </ul>
     </li>
+    <li><a href="#installation">Installation</a>
+    <ul>
+        <li><a href="#guide-to-direct-hosting-on-the-internet">Guide to Direct hosting on the internet</a></li>
+        <li><a href="#local-installation">Local Installation</a></li>
+      </ul></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -71,7 +76,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Hault project showcase video][product-screenshot]](https://example.com)
 
 Hault is a cutting-edge software designed to empower businesses and professionals by simplifying the process of showcasing products and services. Our platform offers a comprehensive solution for adding detailed information about products or services into a user-friendly database. Leveraging advanced AI technologies like Gemini and Workers AI, Hault enables seamless customer interaction and engagement via WhatsApp.
 
@@ -124,7 +129,7 @@ But first for both developers and non-developers we need credentials of websites
 - AI service (either GOOGLE Gemini or Cloudflare Workers AI )
 - Jwt secret key
 
-### What are the env variables we need?
+### What are the env variables we need
 dont worry non-developers you just have to add a .env file in root directory thats it
 
 what will be in .env file?
@@ -178,7 +183,14 @@ CLOUDFLARE_API_TOKEN=
 ```
 Feeling confused? see the ENV folder for full tutorial on how to get all the credentials from the websites, put it in the env file and host it online.
 
-### Guide to Direct hosting on the internet (non-developers)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- INSTALLATION -->
+## Installation
+Installation is divided into 2 parts that is one for non-developers who wanto quickly host and dont want to compicate things and other for the developers that knows programming and want to edit things in the project so lets begin.
+
+### Guide to Direct hosting on the internet
+for `(non-developers)`
 
  - First you have to fork the repo there is a fork option in the website as shown in the image below
  - After which you have to go to render website and sign in with github
@@ -196,8 +208,8 @@ Feeling confused? see the ENV folder for full tutorial on how to get all the cre
   ```
 - host the website and now we are ready to go
 
-### Local Installation (developers)
-
+### Local Installation
+for `(developers)`
 `make sure you have docker installed`
 
 to run this repo locally follow these steps
@@ -245,7 +257,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Add redis support
     
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/captain0jay/Hault/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -281,10 +293,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Captain Jay - [@my_twitter](https://twitter.com/captain0jay) - capja778@gmail.com
-
 Connect with me on linkedin - [@my_linkedin](https://linkedin.com/in/captain0jay)
-
+Captain Jay - [@my_twitter](https://twitter.com/captain0jay) 
+Email - capja778@gmail.com
 Portfolio website - [@my_website](https://captainjay.xyz/)
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/captain0jay/Hault)
@@ -295,18 +306,18 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/ca
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/captain0jay/Hault.svg?style=for-the-badge
+[contributors-url]: https://github.com/captain0jay/Hault/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/captain0jay/Hault.svg?style=for-the-badge
+[forks-url]: https://github.com/captain0jay/Hault/network/members
+[stars-shield]: https://img.shields.io/github/stars/captain0jay/Hault.svg?style=for-the-badge
+[stars-url]: https://github.com/captain0jay/Hault/stargazers
+[issues-shield]: https://img.shields.io/github/issues/captain0jay/Hault.svg?style=for-the-badge
+[issues-url]: https://github.com/captain0jay/Hault/issues
+[license-shield]: https://img.shields.io/github/license/captain0jay/Hault.svg?style=for-the-badge
+[license-url]: https://github.com/captain0jay/Hault/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/captain0jay
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
