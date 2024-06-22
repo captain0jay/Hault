@@ -30,6 +30,7 @@ services:
       - key: AIRTABLE_BASE_ID
       - key: AIRTABLE_API_KEY
       - key: RULES
+      - fromGroup: hault-vars
 
   # - type: web
   #   name: frontend
