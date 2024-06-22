@@ -1,13 +1,35 @@
 # render.yaml
 services:
   - type: web
+    plan: free
     name: backend
     runtime: docker
+    repo: https://github.com/captain0jay/Hault.git
     dockerfilePath: ./backend/Dockerfile
     envVars:
       - key: NODE_ENV
         value: development
-    port: 4000
+      - key: PORT
+      - key: LLM
+      - key: UI
+      - key: OWNER_EMAIL
+      - key: OWNER_PHONE_NUMBER
+      - key: DATABASE_URL
+      - key: REDIS_DATABASE_URL
+      - key: TWILIO_PHONE_NUMBER
+      - key: TWILIO_ACCOUNT_SID
+      - key: TWILIO_AUTH_TOKEN
+      - key: GOOGLE_API_KEY
+      - key: CLOUDFLARE_APP_ID
+      - key: CLOUDFLARE_API_TOKEN
+      - key: GOOGLE_CLIENT_ID
+      - key: GOOGLE_CLIENT_SECRET
+      - key: GOOGLE_REDIRECT_URI
+      - key: JWT_SECRET_KEY
+      - key: AIRTABLE_TABLE_ID
+      - key: AIRTABLE_BASE_ID
+      - key: AIRTABLE_API_KEY
+      - key: RULES
 
   # - type: web
   #   name: frontend
