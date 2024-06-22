@@ -119,6 +119,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 ## Getting Started
 
 Watch the video before starting! (recommended)
+[![Hault setup tutorial video][product-screenshot]](https://example.com)
 
 Installation is divided into 2 parts that is one for non-developers who wanto quickly host and dont want to compicate things and other for the developers that knows programming and want to edit things in the project so lets begin.
 
