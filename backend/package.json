@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "Server.js",
   "scripts": {
-    "test": "jest",
     "start": "node Server.js",
+    "test": "jest",
     "dev": "nodemon Server.js"
   },
   "author": "",
