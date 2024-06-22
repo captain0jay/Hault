@@ -1,0 +1,31 @@
+# render.yaml
+services:
+  - type: web
+    name: backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: development
+    port: 4000
+
+  # - type: web
+  #   name: frontend
+  #   env: node
+  #   buildCommand: npm install
+  #   startCommand: npm run dev
+  #   dockerfilePath: ./frontend/Dockerfile
+  #   envVars:
+  #     - key: NODE_ENV
+  #       value: development
+  #   port: 3000
+
+  # - type: redis
+  #   name: redis
+  #   image: redis:latest
+
+  # - type: mongodb
+  #   name: mongodb
+  #   image: mongo:latest
