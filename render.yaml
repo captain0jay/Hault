@@ -2,30 +2,26 @@
 services:
   - type: web
     name: backend
-    plan: free  # Explicitly specifying the free plan
+    runtime: docker
     dockerfilePath: ./backend/Dockerfile
     envVars:
       - key: NODE_ENV
         value: development
-    autoDeploy: true  # Ensure auto deploy is enabled
-  #   port: 4000
+    port: 4000
 
   # - type: web
   #   name: frontend
-  #   plan: free  # Explicitly specifying the free plan
+  #   runtime: docker
   #   dockerfilePath: ./frontend/Dockerfile
   #   envVars:
   #     - key: NODE_ENV
   #       value: development
-  #   autoDeploy: true  # Ensure auto deploy is enabled
   #   port: 3000
 
   # - type: redis
   #   name: redis
-  #   plan: free  # Explicitly specifying the free plan
-  #   image: redis:latest
+  #   plan: free  # Assuming Redis can use the free plan, please adjust if needed
 
   # - type: mongodb
   #   name: mongodb
-  #   plan: free  # Explicitly specifying the free plan
-  #   image: mongo:latest
+  #   plan: free  # Assuming MongoDB can use the free plan, please adjust if needed
