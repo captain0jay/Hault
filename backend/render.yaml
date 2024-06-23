@@ -5,7 +5,7 @@ services:
     name: backend
     runtime: docker
     repo: https://github.com/captain0jay/Hault.git
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: ./backend/Dockerfile
     envVars:
       - key: NODE_ENV
         value: production
