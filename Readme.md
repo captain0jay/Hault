@@ -178,29 +178,41 @@ RULES='You are an AI support assistant for my company and are only allowed to an
 ```
 
 ### Options
-I have added options for database which is either airtable or mongodb so dependig on what you choose you can add the variable 
-for example if you choose airtable you can add
-```
-AIRTABLE_TABLE_ID=
-AIRTABLE_BASE_ID=
-AIRTABLE_API_KEY=
-```
-and you dont have to add
-```
-DATABASE_URL=
-```
-and vice versa
+First get the following authentication token and api keys from the following services
 
-same for the type of ai you use lets say you use Gemini ai then you just have to use 
+ - Google Gemini API key
+ - Airtable account Table id, base id, api key
+ - Twilio account sid , phone number and auth token
+   
+well actually i added 2 AI servuce that is gemini and workers ai which can be switched using LLM variable set to either GEMINIAI or WORKERAI.But for ease we will use gemini ai for now.
+
+Same for database plan was to in corporate Mongodb too but we are only gonna use Airtable for now so set UI as AIRTABLE
+
+For twilio you will need to create a whatsapp sender by purchasing a number, then create a service there you will choose the number, then in integration section choose webhook and add the call back url as 
+
+`your_url+/api/v1/twilio/message`
+
+in status add 
+
+`your_url+/api/v1/twilio/status`
+
+we will get the url after deployment
+
+ 
+So overall you will need these values 
 ```
-GOOGLE_API_KEY=
-```
-and you dont have to add 
-```
-CLOUDFLARE_APP_ID=
-CLOUDFLARE_API_TOKEN=
-```
-Feeling confused? see the ENV folder for full tutorial on how to get all the credentials from the websites, put it in the env file and host it online.
+LLM=GEMINIAI
+UI=AIRTABLE
+OWNER_EMAIL
+OWNER_PHONE_NUMBER
+TWILIO_PHONE_NUMBER
+TWILIO_ACCOUNT_SID
+TWILIO_AUTH_TOKEN
+AIRTABLE_TABLE_ID
+AIRTABLE_BASE_ID
+AIRTABLE_API_KEY
+```  
+Let everything else stay empty or add "123" as a dummy value when inputting in the deployment.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,33 +237,42 @@ for `(non-developers)`
 
     * credentials to fetch
     ```
-    PORT=3000
     LLM=GEMINIAI
     UI=AIRTABLE
-    OWNER_EMAIL=
-    OWNER_PHONE_NUMBER=
-    DATABASE_URL=
-    REDIS_DATABASE_URL=
-    TWILIO_PHONE_NUMBER=
-    TWILIO_ACCOUNT_SID=
-    TWILIO_AUTH_TOKEN=
-    GOOGLE_API_KEY=
-    CLOUDFLARE_APP_ID=
-    CLOUDFLARE_API_TOKEN=
-    GOOGLE_CLIENT_ID=
-    GOOGLE_CLIENT_SECRET=
-    GOOGLE_REDIRECT_URI=
-    JWT_SECRET_KEY=123
-    AIRTABLE_TABLE_ID=
-    AIRTABLE_BASE_ID=
-    AIRTABLE_API_KEY=
-    RULES='You are an AI support assistant for my company and are only allowed to answer questions related to context i have given you, normal grettings is fine speak like a support assistant on behalf of my company, your responses go directly to my customers so in no response should you be addressing me you are to talk with the users o my application only, ignore lowercase and uppercase ake all lowercase and when you dont have any answer say that we dont have the answer to that right now we will get back to you later' 
+    OWNER_EMAIL
+    OWNER_PHONE_NUMBER
+    TWILIO_PHONE_NUMBER
+    TWILIO_ACCOUNT_SID
+    TWILIO_AUTH_TOKEN
+    AIRTABLE_TABLE_ID
+    AIRTABLE_BASE_ID
+    AIRTABLE_API_KEY 
     ```
 
- 2. Click the below button and put these in the website
+ 2. Click the below button 
     
    [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/captain0jay/Hault)
-  
+
+ 3. Then you will be redirected to render website where the values we got will be inputted 
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/j6d4n937rxgkv7zophq0.png)
+
+ 4. Then just press launch button and your application will be live and your customers can start messaging and take the benefit of AI customer support
+ 
+ 5. One last step as we discussed earlier that in console.twilio.com -> messaging -> service -> your_created_service -> integration 
+
+the call back url as 
+
+`your_url+/api/v1/twilio/message`
+
+in status add 
+
+`your_url+/api/v1/twilio/status`
+
+- here add your_url as the one that you got in hosted application see below image as reference
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w5x7qfgktyex2j620kln.png)
+
 
 ### Local Installation
 for `(developers)`
