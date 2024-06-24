@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://hault.xyz",
+  "proxy": "https://www.hault.xyz",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
