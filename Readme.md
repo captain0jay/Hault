@@ -56,6 +56,7 @@
         <li><a href="#options">Options</a></li>
       </ul>
     </li>
+     <li><a href="#demo">Demo</a></li>
     <li><a href="#installation">Installation</a>
     <ul>
         <li><a href="#guide-to-direct-hosting-on-the-internet">Guide to Direct hosting on the internet</a></li>
@@ -179,6 +180,15 @@ CLOUDFLARE_APP_ID=
 CLOUDFLARE_API_TOKEN=
 ```
 Feeling confused? see the ENV folder for full tutorial on how to get all the credentials from the websites, put it in the env file and host it online.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- DEMO -->
+## Demo
+
+So you can check the bot out right now by messaging at (+13476958493)
+Since the number is blocked because of whatsapp verification problem you can check the website out and try the project to do so you will need to login via Google and you will need to ask the admin permission via email at `capja778@gmail.com`
+then head over to [https://hault.vercel.app/login](https://hault.vercel.app/login)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
