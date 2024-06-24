@@ -16,8 +16,6 @@
     <a href="https://github.com/captain0jay/Hault"><strong>Host it online</strong></a>
     <br />
     <br />
-    <a href="https://github.com/captain0jay/Hault/Tutorials/VideoTutorials.md">Video Tutorials</a>
-    ·
     <a href="https://github.com/captain0jay/Hault/Tutorials/Installation.md">Install locally</a>
     ·
     <a href="https://github.com/captain0jay/Hault/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
@@ -76,8 +74,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Hault project showcase video][product-screenshot]](https://example.com)
-
 Hault is a cutting-edge software designed to empower businesses and professionals by simplifying the process of showcasing products and services. Our platform offers a comprehensive solution for adding detailed information about products or services into a user-friendly database. Leveraging advanced AI technologies like Gemini and Workers AI, Hault enables seamless customer interaction and engagement via WhatsApp.
 
 **Key Features:**
@@ -117,10 +113,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-Watch the video before starting! (recommended)
-
-[![Hault setup tutorial video][product-screenshot]](https://example.com)
 
 Installation is divided into 2 parts that is one for non-developers who wanto quickly host and dont want to compicate things and other for the developers that knows programming and want to edit things in the project so lets begin.
 
@@ -197,12 +189,8 @@ Installation is divided into 2 parts that is one for non-developers who wanto qu
 ### Guide to Direct hosting on the internet
 for `(non-developers)`
 
- 1. First get below written credentials by watching the video below
-    Dont get overwhelmed just watch the video
-    
-    * video to help fetch these credentials
+ 1. First get below written credentials
 
-    [![How to get credentials][product-screenshot]](https://example.com)
 
     * credentials to fetch
     ```
@@ -229,7 +217,7 @@ for `(non-developers)`
     RULES='You are an AI support assistant for my company and are only allowed to answer questions related to context i have given you, normal grettings is fine speak like a support assistant on behalf of my company, your responses go directly to my customers so in no response should you be addressing me you are to talk with the users o my application only, ignore lowercase and uppercase ake all lowercase and when you dont have any answer say that we dont have the answer to that right now we will get back to you later' 
     ```
 
- 2. Click the below button and put these in the website as shown in video above
+ 2. Click the below button and put these in the website
     
    [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/captain0jay/Hault)
   
