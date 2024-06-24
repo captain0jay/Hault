@@ -10,7 +10,7 @@ interface Message {
   sender: 'User' | 'AI';
   text: string;
 }
-export default function chat(){
+export default function Chat(){
     const [text, setText] = useState<string>('');
   const [messages, setMessages] = useState<Message[]>([]);
   const server_url = process.env.NEXT_PUBLIC_SERVER_URL || '';
