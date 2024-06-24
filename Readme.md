@@ -42,6 +42,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#introduction">Introduction</a></li>
     <li>
       <a href="#about-the-project">About The Project</a>
 <!--       <ul>
@@ -70,6 +71,26 @@
   </ol>
 </details>
 
+
+<!-- INTRODUCTION -->
+## Introduction
+
+- The project is mainly a WhatsApp bot which you can scroll down and host via one click deploy on render by pressing `Deploy on render` and the user can talk to the application via WhatsApp to whatever number you have configured on twilio.
+
+- In my case,  you can check the bot out right now by messaging me at (+13476958493)
+Since the number is blocked because of WhatsApp verification problem you can check the website out and try the project to do so you will need to log in via Google and you will need to ask the admin permission via email at `capja778@gmail.com`
+then head over to [https://hault.vercel.app/login](https://hault.vercel.app/login)
+
+- I keep it as raw as possible so that the people using this project find it easy to host and edit the website too.
+Here are some of the screenshots of the application
+
+![Screenshot 1](https://raw.githubusercontent.com/captain0jay/Hault/main/project/Screenshot%20from%202024-06-24%2011-28-06.png)
+
+![Screenshot 2](https://raw.githubusercontent.com/captain0jay/Hault/main/project/Screenshot%20from%202024-06-24%2011-28-27.png)
+
+![Screenshot 3](https://raw.githubusercontent.com/captain0jay/Hault/main/project/Screenshot%20from%202024-06-24%2011-09-11.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ABOUT THE PROJECT -->
@@ -276,10 +297,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [x] Make backend
 - [x] Make routes
-- [ ] Make frontend and auth route
-- [ ] Make landing page
-- [ ] Add redis support
-    
+- [x] Make frontend and auth route
 
 See the [open issues](https://github.com/captain0jay/Hault/issues) for a full list of proposed features (and known issues).
 
