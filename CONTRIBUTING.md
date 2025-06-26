@@ -1,3 +1,3 @@
 # Contributing guidelines
 
-go wild !!!!
+go wild !
